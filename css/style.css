@@ -486,7 +486,6 @@ li#accommodations {
     grid-gap: 3%;
     grid-template: repeat(12, 1fr) / repeat(2, 1fr);
     grid-template-columns: 5% 10% 20% 50% 50% 50% 50% 50%;
-
     grid-template-areas: "header header" "search search " "popular popular" "Acommodations Acommodations" "Activities Activities" "Activities1 Activities1" "Activities2 Activities2" "Activities3 Activities3" "Activities4 Activities4" "Activities5 Activities5" "Activities6 Activities6" "footer footer";
   }
   header {
@@ -736,7 +735,6 @@ li#accommodations {
     text-align: left;
     height: 11%;
   }
-  
   img.scaledaccomodations {
     margin: 0px 0px 0px 0px;
     border-top-left-radius: 10px;
