@@ -471,7 +471,7 @@ div#acommodations {
   background-color: silver;
 }
 
-div#mostpopulardiv {
+div.mostpopulardiv {
   width: 100%;
   border-radius: 16px;
   grid-area: popular;
@@ -666,7 +666,7 @@ ul.containerli1 {
 }
 
 
-li#mostpopularli {
+li.mostpopularli {
   color: #636b6f;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -726,7 +726,7 @@ li.accommodations {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  li#mostpopularli {
+  li.mostpopularli {
     color: #636b6f;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -855,7 +855,7 @@ li.accommodations {
     background-color: white;
   }
   
-  div#mostpopulardiv {
+  div.mostpopulardiv {
     height: 100%;
     width: 100%;
     margin-left: 0%;
