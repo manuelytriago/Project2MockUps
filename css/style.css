@@ -24,6 +24,32 @@ header, footer {
   height: 20px;
 }*/
 
+li.displays{
+  
+  margin-top: 5px;
+display: inline-block;
+
+}
+i {
+  display: inline-block;
+  background-color: white;
+  border-radius: 46%;
+  padding: 5px;
+  background-color: #CCE5FF;
+}
+
+
+.info1{
+  background-image: url("../images/others/info64.png");
+  display:inline-block;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  width: 20px;
+  height: 20px;
+
+}
 
 .figpop1{
   background-image: url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
@@ -168,14 +194,14 @@ a#aco1:hover, a#act1:hover {
 .divsearch2 {
   font-weight: bold;
   font-style: normal;
-  height: 2%;
+  height: 100%;
   width: 30%;
 }
 .divsearch3 {
   font-weight: bold;
   font-style: normal;
   width: 12%;
-  height: 100%;
+  height: 23px;
 }
 .searchinput [type=text] {
   padding: 10px;
@@ -297,7 +323,6 @@ figcaption.figpopular {
   background-color: whitesmoke;
   height: 100%;
   width: 100%;
-  margin-left: 15px;
   text-align: left;
 }
 
@@ -486,6 +511,61 @@ div.mostpopulardiv {
   display: flex;
   flex-wrap: wrap;
 }
+.searchdiv {
+  margin: 4px 4px 4px 4px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6%;
+}
+.filterdiv {
+  margin: 4px 4px 4px 4px;
+  padding: 0;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.filterdiv1 {
+  
+  
+  height: 100%;
+  width: 50px;
+}
+.filterdisplays{
+  height: 25px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 160px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  border-top: 1px solid slategrey;
+  border-right: 1px solid slategrey;
+  border-bottom: 1px solid slategrey;
+
+}
+
+.searchdiv1 {
+  margin: 0 20px 0 20px;
+  flex-grow: 1;
+  height: 12%;
+  width: 100%;
+}
+.searchdiv2 {
+  margin: 0 20px 0 20px;
+  flex-grow: 1;
+  height: 18%;
+  width: 100%;
+}
 
 .divpopular {
   margin: 0 20px 0 20px;
@@ -557,6 +637,11 @@ span#main_name1 {
   margin-top: 20px;
 }
 
+.filter_secondary_name{
+  margin-left: 5px;
+  margin-top: 20px;
+
+}
 .divmargin {
   margin-top: 20px;
 }
@@ -633,10 +718,10 @@ ul {
 ul.containerli {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
   font-weight: 500;
   font-style: normal;
   font-size: 12px;
-  margin: 0;
   padding: 0;
   height: 100%;
   list-style-type: none;
@@ -717,6 +802,11 @@ li.accommodations {
   .secondary_name {
     font-size: 16px;
   }
+  .filter_secondary_name{
+    margin-left: 5px;
+    margin-top: 0px;
+  
+  }
   span#main_name {
     margin-left: 26px;
     margin-bottom: 20px;
@@ -747,7 +837,7 @@ li.accommodations {
     flex-direction: column;
     grid-gap: 3%;
     grid-template: repeat(12, 1fr) / repeat(2, 1fr);
-    grid-template-columns: 60px 115px 534px 60px 480px 480px 480px 200px;
+    grid-template-columns: 60px 200px 534px 60px 480px 480px 480px 200px;
     grid-template-areas: "header header" "search search " "popular popular" "Acommodations Acommodations" "Activities Activities" "Activities1 Activities1" "Activities2 Activities2" "Activities3 Activities3" "Activities4 Activities4" "Activities5 Activities5" "Activities6 Activities6" "footer footer";
   }
   header {
@@ -845,6 +935,85 @@ li.accommodations {
     width: 90px;
     height: 20px;
   }
+  div#search_filters {
+    height: 120%;
+    margin-left: 0px;
+    border-radius: 5px;
+    grid-area: search;
+    background-color: white;
+  }
+
+  .containersearch {
+    display: flex;
+    /*justify-content: space-between;
+    border: 2px solid black;*/
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .divsearch1 {
+    font-weight: bold;
+    font-style: normal;
+    height: 100%;
+    width: 2%;
+  }
+  .divsearch2 {
+    font-weight: bold;
+    font-style: normal;
+    height: 100%;
+    width: 30%;
+  }
+  .divsearch3 {
+    font-weight: bold;
+    font-style: normal;
+    width: 12%;
+    height: 23px;
+  }
+  .searchdiv {
+    margin: 4px 4px 4px 4px;
+    padding: 0;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .searchdiv1 {
+    margin: 0 20px 0 20px;
+    height: 6px;
+    flex-grow: 2;
+    width: 100%;
+  }
+  .searchdiv2 {
+    margin: 0 20px 0 20px;
+    height: 80px;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .filterdiv {
+    margin: 4px 4px 4px 4px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:unset
+    
+  }
+  
+  .filterdiv1 {
+    height: 20px;
+    width: 100%;
+  }
+  .filterdisplays{
+    width: 40%;
+    height: 20px;
+  
+  }
+
   div#acommodations {
     height: 2000px;
     width: 100%;
@@ -935,11 +1104,12 @@ li.accommodations {
     display: flex;
     margin-top: 20px;
     margin-left: 20px;
+    gap: 2%;
     /*justify-content: space-between;
     border: 2px solid black;*/
     flex-direction: column;
     flex-wrap: wrap;
-    height: 200px;
+    height: 300px;
   }
   .divfooter {
     font-weight: bold;
@@ -955,6 +1125,8 @@ li.accommodations {
     text-align: center;
     height: 12%;
   }
+
+
   .containerpopular {
     margin: 4px 4px 30px 4px;
     padding: 0;
@@ -974,6 +1146,23 @@ li.accommodations {
     flex-grow: 1;
     height: 5%;
     width: 100%;
+  }
+  
+
+  figure.filterfiguresize {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
   }
   figure.figuresizepopular {
     border-top-left-radius: 10px;
@@ -997,13 +1186,21 @@ li.accommodations {
     height: 90%;
     object-fit: fill;
   }
+
+  figcaption.filterfigure {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 20px;
+    text-align: left;
+  }
   figcaption.figpopular {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: whitesmoke;
     height: 100%;
     width: 100%;
-    margin-left: 15px;
     text-align: left;
   }
   img.stars {
@@ -1149,6 +1346,13 @@ li.accommodations {
     height: 165px;
     margin: 0;
   }
+  .info1{
+    background-image: url("../images/others/info64.png");
+    width: 14px;
+    height: 14px;
+  
+  }
+  
 }
 
 /*.container div:nth-child(1), div:nth-child(6) {
