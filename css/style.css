@@ -30,6 +30,8 @@ li.displays{
 display: inline-block;
 
 }
+
+
 i {
   display: inline-block;
   background-color: white;
@@ -38,6 +40,21 @@ i {
   background-color: #CCE5FF;
 }
 
+i.location {
+  display: inline-block;
+  background-color:unset;
+}
+
+.location1{
+  background-image: url("../images/others/location.png");
+  display:inline-block;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  width: 20px;
+  height: 20px;
+}
 
 .info1{
   background-image: url("../images/others/info64.png");
@@ -61,7 +78,7 @@ i {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: fill;
-  width: 100%;
+  width: 80%;
   height: 96%;
 
 }
@@ -72,9 +89,9 @@ i {
   background-size: cover;
   margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   object-fit: fill;
-  width: 100%;
+  width: 80%;
   height: 96%;
 }
 
@@ -85,9 +102,9 @@ i {
   background-size: cover;
   margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   object-fit: fill;
-  width: 100%;
+  width: 80%;
   height: 96%;
 }
 
@@ -182,39 +199,57 @@ a#aco1:hover, a#act1:hover {
   /*justify-content: space-between;
   border: 2px solid black;*/
   flex-direction: row;
-  width: 40%;
+  width: 100%;
   height: 100%;
 }
 .divsearch1 {
   font-weight: bold;
   font-style: normal;
-  height: 100%;
-  width: 2%;
+  background-color: silver;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 25px;
+  width: 25px;
 }
 .divsearch2 {
   font-weight: bold;
   font-style: normal;
-  height: 100%;
-  width: 30%;
+  height: 25px;
+  width: 15%;
 }
 .divsearch3 {
   font-weight: bold;
   font-style: normal;
-  width: 12%;
-  height: 23px;
+  width: 7%;
+  height: 25px;
 }
-.searchinput [type=text] {
-  padding: 10px;
+.searchinput1 {
+  height: 23px;
+  padding: 0px;
+  margin: 0;
   font-size: 12px;
   border: 1px solid grey;
   float: left;
-  width: 80%;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+.searchinput [type=text] {
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  border: 1px solid grey;
+  float: left;
+  width: 100%;
   background: #f1f1f1;
 }
 .searchbuttom {
   
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 100%;
-  height: 100%;
+  height: 25px;
   background: #2196F3;
   color: white;
   font-size: 12px;
@@ -455,7 +490,7 @@ header {
 
 .divheaderlogo {
   flex-grow: 2;
-  width: 70%;
+  width: 50%;
   height: 40px;
 }
 
@@ -497,7 +532,7 @@ div#acommodations {
 }
 
 div.mostpopulardiv {
-  width: 100%;
+  width: 400px;
   border-radius: 16px;
   grid-area: popular;
   background-color: silver;
@@ -506,7 +541,7 @@ div.mostpopulardiv {
 .containerpopular {
   margin: 4px 4px 4px 4px;
   padding: 0;
-  height: 70%;
+  height: 98%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -517,18 +552,18 @@ div.mostpopulardiv {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 6%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0%;
 }
 .filterdiv {
   margin: 4px 4px 4px 4px;
   padding: 0;
   height: 100%;
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   
 }
 
@@ -570,7 +605,7 @@ div.mostpopulardiv {
 .divpopular {
   margin: 0 20px 0 20px;
   flex-grow: 1;
-  height: 40%;
+  height: 30%;
   width: 100%;
 }
 
@@ -594,27 +629,27 @@ div.mostpopulardiv {
 .divaccomodations {
   margin: 0 0 60px 20px;
   flex-grow: 1;
-  height: 30%;
+  height: 25%;
   width: 25%;
 }
 
 .divaccomodationsend {
   margin: 0% 20px 0 20px;
   flex-grow: 1;
-  height: 30%;
+  height: 25%;
   width: 25%;
 }
 
 .divaccomodations2 {
   margin: 20px 20px 0 20px;
   flex-grow: 2;
-  height: 25px;
+  height: 10%;
   width: 100%;
 }
 .divaccomodations3 {
-  margin: 20px 20px 0 20px;
+  margin: 0px 20px 0 20px;
   flex-grow: 2;
-  height: 25px;
+  height: 10%;
   width: 100%;
 }
 
@@ -778,7 +813,48 @@ li.accommodations {
   height: 100%;
 }*/
 
-@media all and (max-device-width: 520px) {
+@media all and (min-device-width:768px) and (max-device-width: 1024px) {
+  ul.containerli {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  
+  img.stars {
+    float: left;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+  }
+  
+  div.mostpopulardiv {
+    width: 270px;
+    border-radius: 16px;
+    grid-area: popular;
+    background-color: silver;
+  }
+
+  .container{
+  height: 140%;
+  }
+
+  
+  .searchdiv {
+    gap: 0%;
+  }
+  
+  
+}
+
+
+@media all and (min-device-width:320px) and (max-device-width: 768px) {
   html, body {
     background-color: #fff;
     color: #636b6f;
@@ -954,20 +1030,20 @@ li.accommodations {
   .divsearch1 {
     font-weight: bold;
     font-style: normal;
-    height: 100%;
-    width: 2%;
+    height: 25px;
+    width: 25px;
   }
   .divsearch2 {
     font-weight: bold;
     font-style: normal;
-    height: 100%;
-    width: 30%;
+    height: 20px;
+    width: 60%;
   }
   .divsearch3 {
     font-weight: bold;
     font-style: normal;
-    width: 12%;
-    height: 23px;
+    width: 16%;
+    height: 25px;
   }
   .searchdiv {
     margin: 4px 4px 4px 4px;
@@ -1352,6 +1428,7 @@ li.accommodations {
     height: 14px;
   
   }
+  
   
 }
 
