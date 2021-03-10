@@ -144,6 +144,7 @@ i.location {
 
 .figpop1 {
   background-image: url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +163,7 @@ i.location {
   background-size: cover;
   margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   object-fit: fill;
   width: 80%;
   height: 96%;
@@ -186,11 +187,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 90%;
+  height: 96%;
 }
 
 .actfig2 {
@@ -198,11 +200,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 90%;
+  height: 96%;
 }
 
 .actfig3 {
@@ -210,11 +213,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 90%;
+  height: 96%;
 }
 
 .actfig4 {
@@ -222,11 +226,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 90%;
+  height: 96%;
 }
 
 .actfig5 {
@@ -234,11 +239,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 90%;
+  height: 96%;
 }
 
 .actfig6 {
@@ -246,11 +252,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 2px 2px 2px 2px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 90%;
+  height: 96%;
 }
 
 a#sign1 {
@@ -368,7 +375,7 @@ img.stars {
   font-size: smaller;
   text-indent: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin: 0 0 0 0;
 }
 
@@ -378,7 +385,7 @@ img.stars {
   font-size: smaller;
   text-indent: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   margin: 0 0 0 0;
 }
 
@@ -394,7 +401,7 @@ figcaption {
   background-color: whitesmoke;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 34px;
+  height: 11%;
 }
 
 figcaption.smallest {
@@ -402,7 +409,7 @@ figcaption.smallest {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   text-align: center;
-  height: 22px;
+  height: 25%;
 }
 
 figure.figuresizepopular {
@@ -545,7 +552,7 @@ figcaption.figaccomodations {
   display: grid;
   grid-template: repeat(8, 4fr) / repeat(4, 1fr);
   grid-gap: 3%;
-  grid-template-rows: 2% 30% 40% 40% 2% 20% 25% 50%;
+  grid-template-rows: 2% 30% 40% 40% 2% 25% 25% 50%;
   grid-template-areas: "header header header header" "search search search search " "Acommodations Acommodations Acommodations popular" "Acommodations Acommodations Acommodations popular" "Activities Activities Activities Activities" "Activities1 Activities2 Activities4 Activities5" "Activities1 Activities3 Activities4 Activities6" "footer footer footer footer";
 }
 
@@ -771,7 +778,7 @@ div#activities2 {
 }
 
 div#activities3 {
-  margin-top: 5px;
+  margin-top: 10%;
   grid-area: Activities3;
   background-color: white;
 }
@@ -782,12 +789,13 @@ div#activities4 {
 }
 
 div#activities5 {
-  margin-bottom: 5px;
+  margin-bottom: 5%;
   grid-area: Activities5;
   background-color: white;
 }
 
 div#activities6 {
+  margin-top: 2.5%;
   grid-area: Activities6;
   background-color: white;
 }
@@ -914,9 +922,6 @@ li.accommodations {
     border-radius: 16px;
     grid-area: popular;
     background-color: silver;
-  }
-  .container {
-    height: 140%;
   }
   .searchdiv {
     gap: 0%;
@@ -1051,6 +1056,7 @@ li.accommodations {
     height: 100%;
   }
 }
+
 
 @media all and (min-device-width:320px) and (max-device-width: 768px) {
   html, body {
@@ -1555,7 +1561,7 @@ li.accommodations {
     height: 100%;
     margin: 0 60px 0 0;
   }
-  .figpop1 {
+  .figpop1{
     background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
   .figpop2 {
