@@ -923,15 +923,6 @@ li.accommodations {
     grid-area: popular;
     background-color: silver;
   }
-<<<<<<< HEAD
-=======
-
-  .container{
-  height: 140%;
-  }
-
-  
->>>>>>> c81ede3ae06f266d578cdc23e82d34b7ac92e34f
   .searchdiv {
     gap: 0%;
   }
@@ -1620,12 +1611,7 @@ li.accommodations {
     width: 14px;
     height: 14px;
   }
-<<<<<<< HEAD
   .accfig1 {
-=======
-  
-  .accfig1{
->>>>>>> c81ede3ae06f266d578cdc23e82d34b7ac92e34f
     background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     width: 99%;
     height: 100%;
