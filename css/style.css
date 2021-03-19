@@ -38,7 +38,7 @@ i {
   background-color: white;
   border-radius: 46%;
   padding: 5px;
-  background-color: #CCE5FF;
+  background-color: #DEEBFF;
 }
 
 i.location {
@@ -271,12 +271,13 @@ i.location {
 }
 
 a#sign1 {
-  color: blue;
+  font-weight: bold;
+  color: #0065FC;
 }
 
 a#aco1:hover, a#act1:hover {
-  color: blue;
-  border-width: thin;
+  color: #0065FC;
+  border-width: bold;
   border-style: solid;
   border-width: 2px;
   border-bottom: none;
@@ -344,7 +345,7 @@ a#aco1:hover, a#act1:hover {
   border-bottom-right-radius: 10px;
   width: 100%;
   height: 25px;
-  background: #2196F3;
+  background: #0065FC;
   color: white;
   font-size: 12px;
   border: 1px solid grey;
@@ -378,9 +379,19 @@ img.stars {
   width: 16px;
   height: 16px;
 }
+img.graphic {
+  float: right;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+.responsive_graphic {
+  width: 16px;
+  height: 16px;
+}
 
 .figuresize {
-  text-align: center;
+  text-align: left;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
@@ -390,7 +401,7 @@ img.stars {
 }
 
 .figuresizesmallest {
-  text-align: center;
+  text-align: left;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
@@ -415,14 +426,27 @@ figcaption {
   font-weight: bold;
 }
 
+a.marginsize{
+  margin-top: 5px;
+  height: 50%;
+  width: 90%;
+}
+figcaption.biggers{
+  display: flex;
+  height: 11%;
+  justify-content: space-around;
+
+}
 figcaption.smallest {
+  display: flex;
   font-weight: bold;
   background-color: #f8f8f8;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-color: #f8f8f8 ;
-  text-align: center;
+  text-align: left;
   height: 25%;
+  justify-content: space-around;
 }
 
 figure.figuresizepopular {
@@ -545,7 +569,7 @@ figcaption.figaccomodations {
   font-weight: 200;
   letter-spacing: .1rem;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .links2>a {
@@ -554,7 +578,7 @@ figcaption.figaccomodations {
   font-weight: 200;
   letter-spacing: .1rem;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .m-b-md {
@@ -598,10 +622,15 @@ header {
   height: 40px;
 }
 
+b {
+  
+  font-weight: bold;
+
+}
+
 a {
-  margin: 0% 0 0 0;
-  font-weight: 200;
-  font-style: normal;
+  color:unset;
+  font-style:normal;
   font-size: 12px;
   padding: 0;
   height: auto;
@@ -853,6 +882,8 @@ footer {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
   font-weight: 200;
   font-style: normal;
   font-size: 12px;
@@ -860,6 +891,7 @@ ul {
   padding: 0;
   height: 100%;
   list-style-type: none;
+  gap: 6%;
 }
 
 ul.containerli {
@@ -871,6 +903,7 @@ ul.containerli {
   font-size: 12px;
   padding: 0;
   height: 100%;
+  text-decoration: none;
   list-style-type: none;
   justify-content: space-around;
 }
@@ -884,6 +917,7 @@ ul.containerli1 {
   font-size: 12px;
   padding: 0;
   height: 76%;
+  text-decoration: none;
   list-style-type: none;
   justify-content: space-between;
 }
@@ -897,20 +931,23 @@ ul.containerli1 {
   padding-top: 5px;
 }
 
+
 li.mostpopularli {
   color: #636b6f;
   font-family: "Raleway script=all rev=1";
-  font-weight: 200;
+  font-weight: bold;
   font-size: 12px;
 }
 
 li.accommodations {
   color: #636b6f;
   font-family: "Raleway script=all rev=1";
-  font-weight: 200;
+  font-weight: bold;
   font-size: 12px;
   text-align: left;
 }
+
+
 
 /*.divfooter{
   width: 30%;
@@ -935,6 +972,7 @@ li.accommodations {
     padding: 0;
     height: 100%;
     list-style-type: none;
+    text-decoration: none;
     justify-content: space-around;
   }
   img.stars {
@@ -943,6 +981,7 @@ li.accommodations {
     width: 10px;
     height: 10px;
   }
+
   div.mostpopulardiv {
     width: 270px;
     border-radius: 16px;
@@ -993,7 +1032,7 @@ li.accommodations {
     margin: 0 0 0 0;
   }
   .figuresizesmallest {
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-size: smaller;
     text-indent: 0;
@@ -1134,13 +1173,13 @@ li.accommodations {
   li.mostpopularli {
     color: #636b6f;
     font-family: "Raleway script=all rev=1";
-    font-weight: 200;
+    font-weight: bold;
     font-size: 12px;
   }
   li.accommodations {
     color: #636b6f;
     font-family: "Raleway script=all rev=1";
-    font-weight: 200;
+    font-weight: bold;
     font-size: 12px;
     text-align: left;
   }
@@ -1182,11 +1221,11 @@ li.accommodations {
     color: blue;
   }
   a#sign1 {
-    color: blue;
+    color: #0065FC;
   }
   a#aco1:hover, a#act1:hover {
-    color: blue;
-    border-width: thin;
+    color: #0065FC;
+    border-width: bold;
     border-style: solid;
     border-width: 2px;
     border-top: none;
@@ -1224,11 +1263,9 @@ li.accommodations {
     text-align: center;
   }
   a {
-    margin: 0 0 0 0;
-    font-weight: 200;
-    font-style: normal;
+    color:unset;
+    font-style:normal;
     font-size: 12px;
-    width: 100%;
     padding: 0;
     height: auto;
     text-decoration: none;
@@ -1428,12 +1465,18 @@ li.accommodations {
     height: 0%;
     width: 100%;
   }
+
+ 
+
   figcaption.smallest {
+    
+    margin-left: 10px;
     background-color: #ffffff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    text-align: center;
+    text-align: left;
     height: 12%;
+  
   }
   .containerpopular {
     margin: 4px 4px 30px 4px;
@@ -1549,6 +1592,7 @@ li.accommodations {
     width: 100%;
   }
   figcaption {
+    
     background-color: #ffffff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -1585,7 +1629,7 @@ li.accommodations {
     object-fit: fill;
   }
   .figuresize {
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-size: 12px;
     text-indent: 0;
@@ -1594,7 +1638,7 @@ li.accommodations {
     margin: 0 60px 0 0;
   }
   .figuresizesmallest {
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-size: 12px;
     text-indent: 0;
