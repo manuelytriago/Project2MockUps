@@ -8,7 +8,7 @@ html, body {
   margin: 0.5% 0.5% 0% 0%;
 }
 
-header, footer, section {
+header, footer {
   background-color: #ffffff;
   color: #636b6f;
   font-family: "Raleway script=all rev=1";
@@ -17,6 +17,18 @@ header, footer, section {
   height: 100%;
   width: 100%;
 }
+
+section {
+  color: #636b6f;
+  font-family: "Raleway script=all rev=1";
+  font-weight: 200;
+  font-size: 16px;
+  height: 100%;
+  width: 85%;
+  margin-left: 26px;
+}
+
+
 
 /*img {
   display:block;
@@ -152,11 +164,11 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 2px 2px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: fill;
-  width: 100%;
+  width: 98%;
   height: 96%;
 }
 
@@ -172,11 +184,11 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 2px 2px;
   border-top-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   object-fit: fill;
-  width: 100%;
+  width: 98%;
   height: 96%;
 }
 
@@ -185,11 +197,11 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 2px 2px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: fill;
-  width: 100%;
+  width: 98%;
   height: 96%;
 }
 
@@ -198,12 +210,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 0px 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 96%;
+  height: 88%;
 }
 
 .actfig2 {
@@ -211,7 +223,7 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 0px 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
@@ -224,7 +236,7 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 0px 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
@@ -237,12 +249,12 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 0px 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
   width: 100%;
-  height: 96%;
+  height: 88%;
 }
 
 .actfig5 {
@@ -250,7 +262,7 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 0px 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
@@ -263,7 +275,7 @@ i.location {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 0px 0px 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
@@ -278,7 +290,7 @@ a#sign1 {
 
 a#aco1:hover, a#act1:hover {
   color: #0065FC;
-  border-width: bold;
+  border-width:medium;
   border-style: solid;
   border-width: 2px;
   border-bottom: none;
@@ -348,7 +360,6 @@ a#aco1:hover, a#act1:hover {
   height: 25px;
   background: #0065FC;
   color: white;
-  font-size: 12px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
@@ -397,7 +408,7 @@ img.graphic {
   font-size: smaller;
   text-indent: 0;
   width: 100%;
-  height: 90%;
+  height: 100%;
   margin: 0 0 0 0;
 }
 
@@ -453,10 +464,10 @@ figcaption.smallest {
 figure.figuresizepopular {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #f8f8f8;
-  border-color: #f8f8f8 ;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffffff;
+  border-color: #ffffff ;
   display: flex;
   text-align: center;
   font-style: italic;
@@ -603,7 +614,7 @@ header {
 }
 
 .containerheader {
-  margin-left: 34px;
+  margin-left: 26px;
   display: flex;
   /*justify-content: space-between;
   border: 2px solid black;*/
@@ -630,6 +641,7 @@ b {
 }
 
 a {
+  background-color: unset;
   color:unset;
   font-style:normal;
   font-size: 12px;
@@ -654,7 +666,7 @@ div#search_filters {
 }
 
 div#acommodations {
-  margin-left: 16px;
+  margin-left: 26px;
   border-radius: 16px;
   width: 100%;
   grid-area: Acommodations;
@@ -665,11 +677,12 @@ div.mostpopulardiv {
   width: 400px;
   border-radius: 16px;
   grid-area: popular;
-  background-color: #f2f2f2;
+  background-color:#f2f2f2;
 }
 
 .containerpopular {
-  margin: 4px 4px 4px 4px;
+  background-color:unset;
+  margin: 4px 0px 4px 0px;
   padding: 0;
   height: 98%;
   width: 100%;
@@ -678,7 +691,7 @@ div.mostpopulardiv {
 }
 
 .searchdiv {
-  margin: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 0px;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -689,7 +702,7 @@ div.mostpopulardiv {
 }
 
 .filterdiv {
-  margin: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 0px;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -729,28 +742,28 @@ div.filterdisplays:hover{
 }
 
 .searchdiv1 {
-  margin: 0 20px 0 20px;
+  margin: 0 0px 0 0px;
   flex-grow: 1;
   height: 12%;
   width: 100%;
 }
 
 .searchdiv2 {
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 0px;
   flex-grow: 1;
   height: 18%;
   width: 100%;
 }
 
 .divpopular {
-  margin: 0 20px 0 20px;
+  margin: 0 0px 0 0px;
   flex-grow: 1;
   height: 30%;
   width: 100%;
 }
 
 .divpopular2 {
-  margin: 20px 20px 0 20px;
+  margin: 20px 0px 0 0px;
   flex-grow: 1;
   height: 10%;
   width: 100%;
@@ -794,7 +807,7 @@ div.filterdisplays:hover{
 }
 
 div#activities {
-  margin-left: 16px;
+  margin-left: 26px;
   border-radius: 10px;
   grid-area: Activities;
   height: 10px;
@@ -813,6 +826,15 @@ span#main_name1 {
   margin-top: 20px;
 }
 
+h4{
+  width: 90%;
+  margin: 0;
+}
+
+h4.containermargintop{
+  margin-top: 20px;
+}
+
 .filter_secondary_name {
   margin-left: 5px;
   margin-top: 20px;
@@ -823,7 +845,7 @@ span#main_name1 {
 }
 
 div#activities1 {
-  margin-left: 16px;
+  margin-left: 26px;
   grid-area: Activities1;
   background-color: white;
 }
@@ -857,8 +879,6 @@ div#activities6 {
 }
 
 footer {
-  position:static;
-  bottom: 200;
   margin-top: 1%;
   grid-area: footer;
   background-color: #f2f2f2;
@@ -868,7 +888,7 @@ footer {
 
 .containerfooter {
   margin-top: 20px;
-  margin-left: 1%;
+  margin-left: 26px;
   display: flex;
   /*justify-content: space-between;
   border: 2px solid black;*/
@@ -1157,6 +1177,9 @@ li.accommodations {
     height: 100%;
     width: 100%;
   }
+  section {
+    font-size: 12px;
+  }
   .secondary_name {
     font-size: 12px;
   }
@@ -1165,7 +1188,7 @@ li.accommodations {
     margin-top: 0px;
   }
   span#main_name {
-    margin-left: 26px;
+  
     margin-bottom: 20px;
     padding: 0;
   }
@@ -1228,7 +1251,7 @@ li.accommodations {
   }
   a#aco1:hover, a#act1:hover {
     color: #0065FC;
-    border-width: bold;
+    border-width:medium;
     border-style: solid;
     border-width: 2px;
     border-top: none;
@@ -1323,7 +1346,7 @@ li.accommodations {
     height: 25px;
   }
   .searchdiv {
-    margin: 4px 4px 4px 4px;
+    margin: 4px 4px 4px 0px;
     padding: 0;
     height: 200px;
     width: 100%;
@@ -1333,7 +1356,7 @@ li.accommodations {
     gap: 0;
   }
   .searchdiv1 {
-    margin: 0 20px 0 20px;
+    margin: 0 0px 0 0px;
     height: 6px;
     flex-grow: 2;
     width: 100%;
@@ -1345,7 +1368,7 @@ li.accommodations {
     flex-grow: 1;
   }
   .filterdiv {
-    margin: 4px 4px 4px 4px;
+    margin: 4px 4px 4px 0px;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -1473,8 +1496,8 @@ li.accommodations {
 
   figcaption.smallest {
     
-    margin-left: 10px;
-    background-color: #ffffff;
+    
+    background-color: #f8f8f8;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: left;
@@ -1482,7 +1505,8 @@ li.accommodations {
   
   }
   .containerpopular {
-    margin: 4px 4px 30px 4px;
+    background-color:unset;
+    margin: 4px 0px 30px 0px;
     padding: 0;
     height: 500px;
     width: 98%;
@@ -1490,13 +1514,13 @@ li.accommodations {
     flex-wrap: wrap;
   }
   .divpopular {
-    margin: 0 10px 0 20px;
+    margin: 0 0px 0 0px;
     flex-grow: 1;
     height: 25%;
     width: 100%;
   }
   .divpopular2 {
-    margin: 10px 10px 10px 20px;
+    margin: 10px 0px 10px 0px;
     flex-grow: 1;
     height: 5%;
     width: 100%;
@@ -1519,8 +1543,8 @@ li.accommodations {
   figure.figuresizepopular {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: #ffffff;
     display: flex;
     text-align: center;
@@ -1596,7 +1620,7 @@ li.accommodations {
   }
   figcaption {
     
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 12%;
@@ -1618,7 +1642,7 @@ li.accommodations {
   figcaption.figaccomodations {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     height: 50%;
     width: 100%;
     text-align: left;
@@ -1736,6 +1760,7 @@ li.accommodations {
     height: 100%;
     margin: 2px 2px -8px 2px;
   }
+  
 }
 
 /*.container div:nth-child(1), div:nth-child(6) {
