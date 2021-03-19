@@ -28,6 +28,10 @@ section {
   margin-left: 26px;
 }
 
+section.accomodationscontainer{
+width: 95%;
+}
+
 
 
 /*img {
@@ -47,6 +51,7 @@ li.displays {
 }
 
 i {
+  
   display: inline-block;
   background-color: white;
   border-radius: 46%;
@@ -776,15 +781,18 @@ div.filterdisplays:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .divaccomodations {
-  margin: 0 0 0px 20px;
+  margin: 0 0 0px 0px;
   flex-grow: 1;
   height: 35%;
   width: 25%;
 }
-
+.centeraccomodationsdivmargin{
+  margin-left: 20px;
+}
 .divaccomodationsend {
   margin: 0% 20px 0 20px;
   flex-grow: 1;
@@ -793,14 +801,14 @@ div.filterdisplays:hover{
 }
 
 .divaccomodations2 {
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 0 0px;
   flex-grow: 1;
   height: 5%;
   width: 100%;
 }
 
 .divaccomodations3 {
-  margin: 0px 20px 0 20px;
+  margin: 0px 20px 0 0px;
   flex-grow: 1;
   height: 5%;
   width: 100%;
@@ -1585,7 +1593,7 @@ li.accommodations {
     height: 10px;
   }
   .containeraccomodations {
-    margin: 4px 4px 30px 4px;
+    margin: 4px 4px 30px 0px;
     padding: 0;
     height: 1230px;
     width: 98%;
@@ -1594,26 +1602,26 @@ li.accommodations {
     flex-direction: row;
   }
   .divaccomodations {
-    margin: 0 10px 0 20px;
+    margin: 0 10px 0 0px;
     margin-bottom: 0px;
     flex-grow: 1;
     height: 15%;
     width: 100%;
   }
   .divaccomodations2 {
-    margin: 0 10px 20px 20px;
+    margin: 0 10px 20px 0px;
     flex-grow: 2;
     height: 12px;
     width: 100%;
   }
   .divaccomodations3 {
-    margin: 0 10px 0 20px;
+    margin: 0 10px 0 0px;
     flex-grow: 2;
     height: 12px;
     width: 100%;
   }
   .divaccomodationsend {
-    margin: 0 10px 0 20px;
+    margin: 0 10px 0 0px;
     flex-grow: 1;
     height: 15%;
     width: 100%;
