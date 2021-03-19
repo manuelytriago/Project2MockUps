@@ -8,13 +8,14 @@ html, body {
   margin: 0.5% 0.5% 0% 0%;
 }
 
-header, footer {
+header, footer, section {
   background-color: #ffffff;
   color: #636b6f;
   font-family: "Raleway script=all rev=1";
   font-weight: 200;
   font-size: 16px;
   height: 100%;
+  width: 100%;
 }
 
 /*img {
@@ -856,6 +857,8 @@ div#activities6 {
 }
 
 footer {
+  position:static;
+  bottom: 200;
   margin-top: 1%;
   grid-area: footer;
   background-color: #f2f2f2;
