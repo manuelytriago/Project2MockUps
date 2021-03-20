@@ -43,6 +43,7 @@ width: 95%;
 
 .bold_tittles{
   font-weight: bold;
+  color: black;
 }
 
 li.displays {
@@ -56,7 +57,7 @@ i {
   background-color: white;
   border-radius: 46%;
   padding: 5px;
-  background-color: #DEEBFF;
+  background-color:#e0ebfd;
 }
 
 i.location {
@@ -65,18 +66,47 @@ i.location {
 }
 
 .location1 {
-  background-image: url("../images/others/location.png");
+  background-image: url("../images/others/dolar.png");
   display: inline-block;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: fill;
-  width: 20px;
-  height: 20px;
+  
 }
-
+.location2 {
+  background-image: url("../images/others/family.png");
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  
+}
+.location3 {
+  background-image: url("../images/others/heart.png");
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  
+}
+.location4 {
+  background-image: url("../images/others/dog.png");
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  
+}
+.locationsize {
+  width: 14px;
+  height: 14px;
+}
 .info1 {
-  background-image: url("../images/others/info64.png");
+  background-image: url("../images/others/filterinfo.png");
   display: inline-block;
   background-position: center center;
   background-repeat: no-repeat;
@@ -323,6 +353,7 @@ a#aco1:hover, a#act1:hover {
 }
 
 .divsearch2 {
+  color: black;
   font-weight: bold;
   font-style: normal;
   height: 25px;
@@ -337,6 +368,9 @@ a#aco1:hover, a#act1:hover {
 }
 
 .searchinput1 {
+  color: black;
+
+  font-weight: bold;
   height: 23px;
   padding: 0px;
   margin: 0;
@@ -352,6 +386,8 @@ a#aco1:hover, a#act1:hover {
   padding: 0;
   margin: 0;
   font-size: 12px;
+  color: black;
+  font-weight: bold;
   border: 1px solid grey;
   float: left;
   width: 100%;
@@ -359,6 +395,7 @@ a#aco1:hover, a#act1:hover {
 }
 
 .searchbuttom {
+  
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 100%;
@@ -368,6 +405,10 @@ a#aco1:hover, a#act1:hover {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+}
+button.searchbuttom::after{
+  content: 'Search';
+
 }
 
 .locationresponsive {
@@ -397,13 +438,14 @@ img.stars {
   height: 16px;
 }
 img.graphic {
-  float: right;
+  margin-left: 50px;
+  width: 100%;
   text-align: center;
   width: 20px;
   height: 20px;
 }
 .responsive_graphic {
-  width: 16px;
+  width: 100%;
   height: 16px;
 }
 
@@ -436,6 +478,7 @@ img.scaled {
 }
 
 figcaption {
+  color: black;
   background-color: #f8f8f8;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -444,7 +487,7 @@ figcaption {
 }
 
 a.marginsize{
-  margin-top: 5px;
+  margin-top: 10px;
   height: 50%;
   width: 90%;
 }
@@ -714,6 +757,7 @@ div.mostpopulardiv {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  color: black;
 }
 
 .marginp{
@@ -726,6 +770,17 @@ text-align: center;
   height: 27.23px;
   width: 50px;
   
+}
+.filtertex {
+  font-family: "Raleway script=all rev=1";
+  font-variant: unset;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  height: 25px;
+  margin-left: 30px;
+  display: inline-block;
+  width: 160px;
 }
 
 .filterdisplays {
@@ -835,12 +890,17 @@ span#main_name1 {
 }
 
 h4{
-  width: 90%;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  width: 100%;
   margin: 0;
+  justify-content: space-between;
 }
 
 h4.containermargintop{
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .filter_secondary_name {
@@ -859,28 +919,33 @@ div#activities1 {
 }
 
 div#activities2 {
+  margin-left: 40px;
   grid-area: Activities2;
   background-color: white;
 }
 
 div#activities3 {
+  margin-left: 40px;
   margin-top: 10%;
   grid-area: Activities3;
   background-color: white;
 }
 
 div#activities4 {
+  margin-left: 40px;
   grid-area: Activities4;
   background-color: white;
 }
 
 div#activities5 {
+  margin-left: 40px;
   margin-bottom: 5%;
   grid-area: Activities5;
   background-color: white;
 }
 
 div#activities6 {
+  margin-left: 40px;
   margin-top: 2.5%;
   grid-area: Activities6;
   background-color: white;
@@ -964,14 +1029,14 @@ ul.containerli1 {
 
 
 li.mostpopularli {
-  color: #636b6f;
+  color: black;
   font-family: "Raleway script=all rev=1";
   font-weight: bold;
   font-size: 12px;
 }
 
 li.accommodations {
-  color: #636b6f;
+  color: black;
   font-family: "Raleway script=all rev=1";
   font-weight: bold;
   font-size: 12px;
@@ -992,6 +1057,57 @@ li.accommodations {
   height: 100%;
 }*/
 
+@media all and (min-width:1025px) and (max-width: 1351px) {
+  .container {
+    /*height: 100%;
+  display: grid;
+  grid-template: repeat(8, 4fr) / repeat(4, 1fr);
+  grid-gap: 3%;
+  grid-template-rows: 2% 30% 40% 40% 2% 25% 25% 50%;
+  grid-template-areas: "header header header header" "search search search search " "Acommodations Acommodations Acommodations popular" "Acommodations Acommodations Acommodations popular" "Activities Activities Activities Activities" "Activities1 Activities2 Activities4 Activities5" "Activities1 Activities3 Activities4 Activities6" "footer footer footer footer";
+*/
+    
+    height: 720px;
+    display: grid;
+    grid-template: repeat(8, 4fr) / repeat(4, 1fr);
+    grid-gap: 3%;
+    grid-template-rows: 2% 30% 40% 40% 2% 15% 15% 50%;
+    grid-template-areas: "header header header header" "search search search search " "Acommodations Acommodations Acommodations popular" "Acommodations Acommodations Acommodations popular" "Activities Activities Activities Activities" "Activities1 Activities2 Activities4 Activities5" "Activities1 Activities3 Activities4 Activities6" "footer footer footer footer";
+  }
+  a.marginsize{
+    margin-top: 5px;
+    height: 50%;
+    width: 90%;
+  }
+div#activities5{
+  margin-bottom: 2%;
+}
+div#activities1{
+  height: 100%;
+}
+div#activities2{
+  height: 90%;
+}
+div#activities3{
+  height: 66%;
+}
+div#activities4{
+  height: 100%;
+}
+div#activities5{
+  height: 80%;
+}
+div#activities6{
+  height: 70%;
+}
+
+  .figuresizesmallest {
+    
+    height: 100%;
+  }
+}
+
+
 @media all and (min-width:768px) and (max-width: 1024px) {
   ul.containerli {
     display: flex;
@@ -1006,6 +1122,16 @@ li.accommodations {
     text-decoration: none;
     justify-content: space-around;
   }
+  a.marginsize{
+    margin-top: 5px;
+    height: 50%;
+    width: 90%;
+  }
+  figcaption.biggers {
+    display: flex;
+    height: 14%;
+    justify-content: space-around;
+}
   img.stars {
     float: left;
     text-align: center;
@@ -1043,14 +1169,11 @@ li.accommodations {
   grid-template-areas: "header header header header" "search search search search " "Acommodations Acommodations Acommodations popular" "Acommodations Acommodations Acommodations popular" "Activities Activities Activities Activities" "Activities1 Activities2 Activities4 Activities5" "Activities1 Activities3 Activities4 Activities6" "footer footer footer footer";
 */
     
-    
-    
-    
     height: 720px;
     display: grid;
     grid-template: repeat(8, 4fr) / repeat(4, 1fr);
     grid-gap: 3%;
-    grid-template-rows: 2% 30% 40% 40% 2% 15% 15% 50%;
+    grid-template-rows: 2% 30% 40% 40% 2% 12% 12% 50%;
     grid-template-areas: "header header header header" "search search search search " "Acommodations Acommodations Acommodations popular" "Acommodations Acommodations Acommodations popular" "Activities Activities Activities Activities" "Activities1 Activities2 Activities4 Activities5" "Activities1 Activities3 Activities4 Activities6" "footer footer footer footer";
   }
   .figuresize {
@@ -1205,13 +1328,13 @@ li.accommodations {
     margin-bottom: 5px;
   }
   li.mostpopularli {
-    color: #636b6f;
+    color: black;
     font-family: "Raleway script=all rev=1";
     font-weight: bold;
     font-size: 12px;
   }
   li.accommodations {
-    color: #636b6f;
+    color: black;
     font-family: "Raleway script=all rev=1";
     font-weight: bold;
     font-size: 12px;
@@ -1350,8 +1473,9 @@ li.accommodations {
   .divsearch3 {
     font-weight: bold;
     font-style: normal;
-    width: 16%;
+    width: 8%;
     height: 25px;
+
   }
   .searchdiv {
     margin: 4px 4px 4px 0px;
@@ -1370,7 +1494,7 @@ li.accommodations {
     width: 100%;
   }
   .searchdiv2 {
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 0px;
     height: 80px;
     width: 100%;
     flex-grow: 1;
@@ -1503,8 +1627,7 @@ li.accommodations {
  
 
   figcaption.smallest {
-    
-    
+    color: black;
     background-color: #f8f8f8;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -1627,7 +1750,7 @@ li.accommodations {
     width: 100%;
   }
   figcaption {
-    
+    color: black;
     background-color: #f8f8f8;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -1727,7 +1850,7 @@ li.accommodations {
     margin: 0;
   }
   .info1 {
-    background-image: url("../images/others/info64.png");
+    
     width: 14px;
     height: 14px;
   }
@@ -1768,6 +1891,34 @@ li.accommodations {
     height: 100%;
     margin: 2px 2px -8px 2px;
   }
+  searchbuttom {
+  background-color: unset;
+  width: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  }
+
+  .imgsearchbuttom {
+    background-image: url("../images/others/images.png");
+    display: inline-block;
+    background-color: unset;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    width: 14px;
+    height: 14px;
+    border-left: none;
+    cursor: pointer;
+  }
+  button.searchbuttom::after{
+    content: none;
+    }
+    .locationsize {
+      width: 10px;
+      height: 10px;
+    }
+    
   
 }
 
